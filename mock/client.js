@@ -2,7 +2,7 @@ import WebSocket from "ws";
 import prompts from 'prompts';
 
 const host = process.env.HOST || '127.0.0.1';
-const ws = new WebSocket(`ws://${host}:8080`);
+const ws = new WebSocket(`ws://${host}/ws`);
 
 const promptRequest = async (prompt, request) => {
   await prompts({

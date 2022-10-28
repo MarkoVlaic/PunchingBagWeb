@@ -1,7 +1,7 @@
 import WebSocket from "ws";
 
 const host = process.env.HOST || '127.0.0.1';
-const ws = new WebSocket(`ws://${host}:8080`);
+const ws = new WebSocket(`ws://${host}/ws`);
 
 ws.on('open', () => {
   const payload = {
